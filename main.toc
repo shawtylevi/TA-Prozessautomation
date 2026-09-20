@@ -1,0 +1,20 @@
+\babel@toc {american}{}\relax 
+\babel@toc {ngerman}{}\relax 
+\babel@toc {american}{}\relax 
+\babel@toc {ngerman}{}\relax 
+\contentsline {chapter}{Abkürzungsverzeichnis}{iii}{chapter*.3}%
+\contentsline {chapter}{Abbildungsverzeichnis}{iv}{chapter*.3}%
+\contentsline {chapter}{\numberline {1}Einleitung}{1}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Problemstellung}{2}{chapter.2}%
+\contentsline {chapter}{\numberline {3}Methodik}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Vorgehensweise der Prozessaufnahme und -modellierung}{5}{section.3.1}%
+\contentsline {section}{\numberline {3.2}BPMN 2.0 methodische Grundlage}{5}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Verortung im Mehrebenenmodell der Prozesslandkarte}{5}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Transfer}{6}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Erstaufnahme des MDV-Ablaufs}{6}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Modellierung des MDV-Prozesses in Signavio}{6}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Verortung des MDV-Modells in der Prozessarchitektur}{6}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Fazit und Ausblick}{7}{chapter.5}%
+\contentsline {chapter}{Literaturverzeichnis}{8}{chapter*.7}%
+\contentsline {chapter}{Quellenverzeichnis}{9}{chapter*.8}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

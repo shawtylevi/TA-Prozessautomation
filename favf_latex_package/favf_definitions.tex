@@ -1,0 +1,475 @@
+\usepackage{xspace}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{bm}
+\usepackage{upgreek}
+\usepackage{graphicx}
+\usepackage{ifthen}
+
+
+\newcommand{\latex}{\LaTeX\xspace}
+
+
+%%%%%%%%%%%%%%%%
+%              %
+%  references  %
+%              %
+%%%%%%%%%%%%%%%%
+
+\newcommand{\reffig}[1]{Figure~\ref{fig:#1}}
+\newcommand{\refsubfig}[1]{Figure~\ref{subfig:#1}}
+
+
+%%%%%%%%%%
+%        %
+%  sets  %
+%        %
+%%%%%%%%%%
+
+
+\newcommand{\setN}{\ensuremath{\mathbb{N}}}  % natural numbers
+\newcommand{\setZ}{\ensuremath{\mathbb{Z}}}  % integers
+\newcommand{\setQ}{\ensuremath{\mathbb{Q}}}  % rational numbers
+\newcommand{\setR}{\ensuremath{\mathbb{R}}}  % reals
+\newcommand{\setC}{\ensuremath{\mathbb{C}}}  % complex numbers
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                           %
+%  formatting of variables  %
+%                           %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% variable:
+\newcommand{\var}[1]{\ensuremath{#1}}
+
+% complex variable:
+\newcommand{\cvar}[1]{\ensuremath{\underline{#1}\,}}
+
+% vectors
+\renewcommand{\vec}[1]{\ensuremath{\bm{#1}}}
+\newcommand{\vecTr}[1]{\ensuremath{\bm{#1}\mTr}}
+\newcommand{\vecHerm}[1]{\ensuremath{\bm{#1}}\mHerm}
+
+\newcommand{\cvec}[1]{\vec{\cvar{#1}}}
+\newcommand{\cvecTr}[1]{\vecTr{\cvar{#1}}}
+\newcommand{\cvecHerm}[1]{\vecHerm{\cvar{#1}}}
+
+
+% matrices
+\newcommand{\mat}[1]{\vec{#1}}
+\newcommand{\matTr}[1]{\vecTr{#1}}
+\newcommand{\matHerm}[1]{\vecHerm{#1}}
+
+\newcommand{\cmat}[1]{\cvec{#1}}
+\newcommand{\cmatTr}[1]{\cvecTr{#1}}
+\newcommand{\cmatHerm}[1]{\cvecHerm{#1}}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                           %
+%  formatting of functions  %
+%                           %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\newcommand{\func}[1]{\ensuremath{\mathrm{#1}}}                          % function that returns a real-valued scalar
+\newcommand{\cfunc}[1]{\ensuremath{\underline{\mathrm{#1}}\,}}           % function that returns a complex-valued scalar
+\newcommand{\vecfunc}[1]{\ensuremath{\bm{\mathrm{#1}}}}                  % function that returns a real-valued vector
+\newcommand{\cvecfunc}[1]{\ensuremath{\underline{\bm{\mathrm{#1}}}\,}}   % function that returns a complex-valued vector
+\newcommand{\matfunc}[1]{\vecfunc{#1}}                                   % function that returns a real-valued matrix
+\newcommand{\cmatfunc}[1]{\cvecfunc{#1}}                                 % function that returns a complex-valued scalar
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                    %
+%  standard functions and operators  %
+%                                    %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% operators on complex numbers
+\newcommand{\cConj}{\ensuremath{^\ast}}                                             % complex conjugate
+\newcommand{\cReal}[1]{\ensuremath{\mathcal{R}\left\lbrace #1 \right\rbrace}}      % real part
+\newcommand{\cImag}[1]{\ensuremath{\mathcal{I}\left\lbrace #1 \right\rbrace}}      % imaginary part
+
+
+% unary matrix/vector operators (suffixes):
+\newcommand{\mTr}{\ensuremath{^\mathrm{T}}}           % transposition
+\newcommand{\mHerm}{\ensuremath{^\mathrm{H}}}         % Hermitian transpose (complex conjugate transpose)
+
+\newcommand{\mInv}{\ensuremath{^{\text{-}1}}}                % matrix inverse
+\newcommand{\mInvTr}{\ensuremath{^{-\mathrm{T}}}}     % transpose of matrix inverse
+\newcommand{\mInvHerm}{\ensuremath{^{-\mathrm{H}}}}   % hermitian transpose of matrix inverse
+\newcommand{\mPinv}{\ensuremath{^\text{\dag}}}            % Moore-Penrose pseudo-inverse
+
+\newcommand{\matInv}[1]{\ensuremath{\mat{#1}\mInv}}
+\newcommand{\cmatInv}[1]{\ensuremath{\cmat{#1}\mInv}}
+\newcommand{\matPinv}[1]{\ensuremath{\mat{#1}\mPinv}}
+\newcommand{\cmatPinv}[1]{\ensuremath{\cmat{#1}\mPinv}}
+
+
+% binary matrix/vector operators:
+\newcommand{\mKron}{\ensuremath{\otimes}}             % Kronecker product
+\newcommand{\mKhatri}{\ensuremath{\diamond}}          % Khatri-Rao product
+\newcommand{\mElemProd}{\ensuremath{\odot}}           % hadamard (element-wise) product
+
+
+% other operators
+\newcommand{\mNorm}[2]{\ensuremath{\left\| #1 \right\|_{#2}}}         % general norm
+\newcommand{\mFrobNorm}[1]{\mNorm{#1}{\text{F}}}                      % Frobenius norm
+\newcommand{\mDiag}[1]{\ensuremath{\mathrm{diag}\left(#1\right)}}     % for matrices: returns main diagonal as vector; for vecor: returns diagonal matrix
+\newcommand{\mTrace}[1]{\ensuremath{\mathrm{trace}\left(#1\right)}}   % sum of diagonal elements
+\newcommand{\mDet}[1]{\ensuremath{\mathrm{det}\left(#1\right)}}       % determinant
+
+
+
+%%%%%%%%%%%%%%%%%
+%               %
+%  convolution  %
+%               %
+%%%%%%%%%%%%%%%%%
+
+\makeatletter
+\newcommand{\convolve}{\ensuremath{\ast}}
+\newcommand{\circConvolve}{\ensuremath{\mathbin{\mathpalette\make@circled\ast}}}
+\newcommand{\make@circled}[2]{%
+  \ooalign{$\m@th#1\smallbigcirc{#1}$\cr\hidewidth$\m@th#1#2$\hidewidth\cr}%
+}
+\newcommand{\smallbigcirc}[1]{%
+  \vcenter{\hbox{\scalebox{0.77778}{$\m@th#1\bigcirc$}}}%
+}
+\makeatother
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+%                      %
+%  coordinate systems  %
+%                      %
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+% azimuth angle:
+\newcommand{\azi}{\ensuremath{\varphi}}
+\newcommand{\upazi}{\ensuremath{\upvarphi}}  % non-italic
+
+% elevation angle:
+\newcommand{\ele}{\ensuremath{\vartheta}}
+\newcommand{\upele}{\ensuremath{\upvartheta}}  % non-italic
+
+% helper command for command \coele and  \upcoele (see below)
+\newcommand{\hslashslash}{%
+  \raisebox{.9ex}{%
+    \scalebox{.7}{%
+      \rotatebox[origin=c]{18}{$-$}%
+    }%
+  }%
+}
+
+% co-elevation:
+%   - Ranges from positive y-axis (0°/0 rad) to negative y-axis (180°/? rad).
+%   - Formatted using a \vartheta with a slash.
+\DeclareRobustCommand{\coele}{%
+  {% keep these braces!
+    \ensuremath{%                            
+    \vphantom{\vartheta}%
+    \ooalign{\kern-.07em\smash{\lower.35em\hbox{\hslashslash}}\hidewidth\cr$\vartheta$\cr}%
+    \kern.05em
+    }%
+  }%
+}
+
+% non-italic co-elevation
+\newcommand{\upcoele}{%
+  {% keep these braces!
+    \text{% needed to scale correctly in subscripts
+      \ensuremath{%
+        \vphantom{\upvartheta}%
+        \ooalign{\kern-.07em\smash{\lower.35em\hbox{\hslashslash}}\hidewidth\cr$\upvartheta$\cr}%
+        \kern.05em%
+      }%
+    }%
+  }%
+}
+
+
+
+%%%%%%%%%%%%%%%%%
+%               %
+%  derivatives  %
+%               %
+%%%%%%%%%%%%%%%%%
+
+% differential 'd':
+\newcommand{\diff}{\mathrm{d}}
+
+% make \partial symbol upright:
+\let\oldpartial\partial
+\DeclareRobustCommand{\uppartial}{\text{\rotatebox[origin=t]{20}{\scalebox{0.95}[1]{$\oldpartial$}}}\hspace{-1pt}}
+\renewcommand{\partial}{\uppartial}
+
+\newcommand{\pDiff}{\uppartial} % alias (to be consistent with \diff)
+
+
+\newcommand{\deriv}[3][]{%
+  \ifthenelse{\equal {#1}{}}{% no order given:
+    \frac{\diff #2}{\diff #3}%
+  }{ % order given:
+    \frac{\diff^{#1} #2}{\diff #3^{#1}}%
+  }%
+}
+
+\newcommand{\pDeriv}[3][]{%
+  \ifthenelse{\equal {#1}{}}{% no order given:
+    \frac{\pDiff #2}{\partial #3}%
+  }{% order given:
+    \frac{\pDiff^{#1} #2}{\partial #3^{#1}}%
+  }%
+}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                              %
+%  general transform commands  %
+%                              %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% based on package trfsgns (https://ctan.org/pkg/trfsigns):
+
+% transform:
+%
+% #1: argument for the resulting function or series
+% #2: letter or name of the transform
+% #3: expression that is being transformed
+% #4: subscript text (e.g., for giving the variable over which the transform in performed)
+\newcommand{\mathTransform}[4]{%
+  \ensuremath{%
+      \operatorname*{#2}%
+      \ifthenelse{\equal {#4}{}}{% no argument for subscript text        
+      }{% argument for subscript text given
+        _{#4} %
+      }%
+      \kern-2.0pt%
+      \left\lbrace #3 \right\rbrace%
+      \ifthenelse{\equal {#1}{}}{% no argument for resulting function given        
+      }{% argument for resulting function given
+        \kern-2.0pt #1 %
+      }%
+  }%
+}
+
+
+% continues transform
+%
+% #1: argument for the resulting function (example: F{g(t)}(f) <-- 'f' is the argument)
+%     --> If not empty, the argument will be enclosed in round brackets.
+% #2: letter or name of the transform
+% #3: expression that is being transformed
+\newcommand{\mathContTransform}[4]{%
+  \mathTransform%
+  { \if\relax\detokenize{#1}\relax\else\ensuremath{\left( #1 \right)}\fi }% enclose in round brackets if optional argument is given
+  {#2}{#3}{#4}%
+}
+
+% discrete transform
+%
+% #1: argument for the resulting series (example: F{g[n]}[k] <-- 'k' is the argument)
+%     --> If not empty, the argument will be enclosed in square brackets.
+% #2: letter or name of the transform
+% #3: expression that is being transformed
+\newcommand{\mathDiscTransform}[4]{%
+  \mathTransform%
+  { \if\relax\detokenize{#1}\relax\else\ensuremath{\left[ #1 \right]}\fi }% enclose in square brackets if optional argument is given
+  {#2}{#3}{#4}%
+}
+
+% inverse continues transform
+%
+% #1: argument for the resulting function (example: F^-1{g(f)}(t) <-- 't' is the argument)
+%     --> If given, the argument will be enclosed in round brackets.
+% #2: letter or name of the transform
+% #3: expression that is being inverse-transformed
+\newcommand{\mathContInvTransform}[4]{\mathContTransform{#1}{#2\mInv}{#3}{#4}}
+
+% discrete inverse transform
+%
+% #1: argument for the resulting series (example: F^-1{g[n]}[k] <-- 'k' is the argument)
+%     --> If given, the argument will be enclosed in square brackets.
+% #2: letter or name of the transform
+% #3: expression that is being inverse-transformed
+\newcommand{\mathDiscInvTransform}[4]{\mathDiscTransform{#1}{#2\mInv}{#3}{#4}}
+
+
+% Transform relation.
+% --> Has a a hollow circle at the left and a solid cicle on the right, connected by a horizontal line.
+%
+% #1 (optional): Symbol for the transformation (written above the horizontal line)
+\makeatletter
+\newcommand{\transformRelation}[1][]{%
+  \mathop{%
+    \mbox{%
+      \setlength{\unitlength}{0.1em}%
+      \begin{picture}(37,10)%
+        \put(4,3){\circle{4}}%
+        \put(6,3){\line(1,0){26}}%
+        \put(33,3){\circle*{4}}%
+        \put(19,7){\makebox(0,0){#1}}%
+      \end{picture}%
+    }%
+  }\slimits@%
+}
+\makeatother
+
+
+% Reversed transform relation.
+% --> Like \transformRelation but with the solid circle at the left and the hollow circle at the right
+%
+% #1: Symbol for the transformation (written above the horizontal line)
+\makeatletter
+\newcommand{\revTransformRelation}[1][]{%
+  \mathop{%
+    \mbox{%
+      \setlength{\unitlength}{0.1em}%
+      \begin{picture}(37,10)%
+        \put(4,3){\circle*{4}}%
+        \put(6,3){\line(1,0){25}}%
+        \put(33,3){\circle{4}}%
+        \put(19,7){\makebox(0,0){#1}}%
+      \end{picture}%
+    }%
+  }\slimits@%
+}
+\makeatother
+
+% Create a continuous transform
+%
+% This will create commands \<name>Transform, \<name>InvTransform,
+% \<name>Relation, and \<name>RevRelation, where <name> is the name
+% of the transform.
+%
+% #1: name of the transform ('fourier', 'dft', 'laplace', ...)
+% #2: Symbol/text used for the transform
+\newcommand{\createContinuousTransform}[2]{%
+%
+  % create command \<#1>Transformation
+  \expandafter\NewDocumentCommand\csname#1Transform\endcsname{E{_}{\relax}O{}m}{%
+    \mathContTransform{##2}{#2}{##3}{##1}%
+  }%
+%
+  % create command \<#1>InvTransformation
+  \expandafter\NewDocumentCommand\csname#1InvTransform\endcsname{E{_}{\relax}O{}m}{%
+    \mathContInvTransform{##2}{#2}{##3}{##1}%
+  }%
+%
+  % create command \<#1>Relation
+  \expandafter\newcommand\csname#1Relation\endcsname{%
+    \mathop{\transformRelation[#2]{}}
+  }%
+%
+  % create command \<#1>RevRelation
+  \expandafter\newcommand\csname#1RevRelation\endcsname{%
+    \mathop{\revTransformRelation[#2]{}}
+  }%
+}
+
+% Create a discrete transform
+%
+% This will create commands \<name>Transform, \<name>InvTransform,
+% \<name>Relation, and \<name>RevRelation, where <name> is the name
+% of the transform.
+%
+% #1: name of the transform ('fourier', 'dft', 'laplace', ...)
+% #2: Symbol/text used for the transform
+\newcommand{\createDiscreteTransform}[2]{%
+%
+  % create command \<#1>Transformation
+  % \expandafter\newcommand\csname#1Transform\endcsname[2][]{%
+  \expandafter\NewDocumentCommand\csname#1Transform\endcsname{E{_}{\relax}O{}m}{%
+    \mathDiscTransform{##2}{#2}{##3}{##1}%
+  }%
+%
+  % create command \<#1>InvTransformation
+  \expandafter\NewDocumentCommand\csname#1InvTransform\endcsname{E{_}{\relax}O{}m}{%
+    \mathDiscInvTransform{##2}{#2}{##3}{##1}%
+  }%
+%
+  % create command \<#1>Relation
+  \expandafter\newcommand\csname#1Relation\endcsname{%
+    \mathop{\transformRelation[#2]{}}
+  }%
+%
+  % create command \<#1>RevRelation
+  \expandafter\newcommand\csname#1RevRelation\endcsname{%
+    \mathop{\revTransformRelation[#2]{}}
+  }%
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%                       %
+%  specific transforms  %
+%                       %
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%% Fourier transform %%
+
+% letter for the Fourier transform:
+\newcommand{\fourierLetter}{\ensuremath{\mathcal{F}}}
+
+% Create command:
+%  \fourierTransform, \fourierInvTransform, \fourierRelation, \fourierRevRelation
+\createContinuousTransform{fourier}{\fourierLetter}
+
+
+%% Discrete Fourier transform %%
+
+% letter for the Fourier transform:
+\newcommand{\dftLetters}{\ensuremath{\mathcal{DFT}}}
+
+% Create command:
+%  \dftTransform, \dftInvTransform, \dftRelation, \dftRevRelation
+\createDiscreteTransform{dft}{\dftLetters}
+
+
+%% Laplace transform %%
+
+% letter for the Laplace transform:
+\newcommand{\laplaceLetter}{\ensuremath{\mathcal{L}}}
+
+% Create command:
+%  \laplaceTransform, \laplaceInvTransform, \laplaceRelation, \laplaceRevRelation
+\createContinuousTransform{laplace}{\laplaceLetter}
+
+
+
+%%%%%%%%%%%%%%%%%
+%               %
+%  stochastics  %
+%               %
+%%%%%%%%%%%%%%%%%
+
+\NewDocumentCommand\expValue{e{_}m}{%
+    \operatorname*{\mathbb{E}}\IfNoValueF{#1}{_{#1}} \left\lbrace #2 \right\rbrace%
+}
+
+\NewDocumentCommand\variance{e{_}m}{%
+    \operatorname*{\mathrm{var}}\IfNoValueF{#1}{_{#1}} \left\lbrace #2 \right\rbrace%
+}
+
+\NewDocumentCommand\covariance{e{_}m}{%
+    \operatorname*{\mathrm{cov}}\IfNoValueF{#1}{_{#1}} \left\lbrace #2 \right\rbrace%
+}
+
+\NewDocumentCommand\correlation{e{_}m}{%
+    \operatorname*{\mathrm{corr}}\IfNoValueF{#1}{_{#1}} \left\lbrace #2 \right\rbrace%
+}
+
+\newcommand{\mCorr}[1]{\ensuremath{\mat{R}_{#1}}}
+\newcommand{\mcCorr}[1]{\ensuremath{\cmat{R}_{#1}}}
+\newcommand{\mCov}[1]{\ensuremath{\mat{C}_{#1}}}
+\newcommand{\mcCov}[1]{\ensuremath{\cmat{C}_{#1}}}

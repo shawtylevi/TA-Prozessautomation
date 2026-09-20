@@ -1,0 +1,116 @@
+\documentclass[watermark,twoside]{favf-thesis}
+	% default language English
+
+\input{favf_latex_package/favf_definitions}
+
+
+%---------------------------------------- Additional Packages ------------------------------
+\usepackage[export]{adjustbox}
+\usepackage{acronym}
+\usepackage{todonotes}
+\usepackage{tabularx}
+\usepackage[utf8]{inputenc}
+\usepackage{comment}
+\usepackage[flushmargin]{footmisc} % Deaktiviert das Einrücken
+\usepackage{pdfpages}
+\usepackage{subcaption}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{appendix}
+\usepackage{multibib}
+
+
+\newcommand{\quotemarks}[1]{\glqq#1\grqq}
+
+
+
+%---------------------------------------- Variables ----------------------------------------
+
+\author{Le Vi Nguyen}
+\thesistype{Transferarbeit}
+\thesiscite{Transferarbeit}
+\title{Optimization of an IoT Infrastructure and RFID solution}
+\hypersetup{hidelinks}
+
+%---------------------------------------- Document generation ------------------------------
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.98, 0.98, 0.95}
+
+\lstset{frame=none,
+  language=Python,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=left,
+  backgroundcolor=\color{backcolour},
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+
+\let\cleardoublepage\clearpage
+\newcites{intern}{Quellenverzeichnis}
+
+\begin{document}
+
+% Change your name and the title of the thesis in the file 'titlepage'.
+\input{titlepage}
+
+\pagenumbering{roman}
+
+\chapter*{Eigenständigkeitserklärung}
+\input{eigenständigkeitserklärung}
+
+\acresetall
+\tableofcontents
+\clearpage
+
+
+% List of acronyms. Add new/more acronyms in the corresponding file.
+% Anhang (das sind dann Seiten von Daten bspw.) vielleicht hinzufügen und Listings Code
+\chapter*{Abkürzungsverzeichnis}
+
+\addcontentsline{toc}{chapter}{Abkürzungsverzeichnis}
+\input{acronyms}
+\clearpage
+
+% List of figures. The list is generated automatically.
+\addcontentsline{toc}{chapter}{\listfigurename}
+\listoffigures
+\clearpage
+
+
+\pagenumbering{arabic}
+
+% Includes all chapters of the thesis. You can add more chapters if required.
+\include{chapter1}
+\include{chapter2}
+\include{chapter3}
+\include{chapter4}
+\include{chapter5}
+
+
+% Add citation commands in the text where appropriate, e.g., \cite{example}
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
+\bibliographystyleintern{IEEEtran}
+\bibliographyintern{intern}
+
+
+\end{document}
+
+%Hinweis: \cleardoublepage \cleardoublepage
