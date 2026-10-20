@@ -47,4 +47,24 @@ S.~B. Droege and J.~M. Hoobler, ``Employee turnover and tacit knowledge
   \url{https://api.semanticscholar.org/CorpusID:150503346}
 \BIBentrySTDinterwordspacing
 
+\bibitem{mendling2013fundamentals}
+J.~Mendling, H.~A. Reijers, M.~La~Rosa, and M.~Dumas, ``Fundamentals of
+  business process management,'' in \emph{GI-Jahrestagung}.\hskip 1em plus
+  0.5em minus 0.4em\relax Springer, 2013, p. 157.
+
+\bibitem{gadatsch2025modellierung}
+A.~Gadatsch, ``Modellierung und analyse von prozessen,'' in \emph{Grundkurs
+  Gesch{\"a}ftsprozess-Management: Analyse, Modellierung, Optimierung und
+  Controlling von Prozessen}.\hskip 1em plus 0.5em minus 0.4em\relax Springer,
+  2025, pp. 107--181.
+
+\bibitem{Stefan2015}
+\BIBentryALTinterwordspacing
+S.~Oppl, ``Articulation of subject-oriented business process models,'' in
+  \emph{Proceedings of the 7th International Conference on Subject-Oriented
+  Business Process Management}, ser. S-BPM ONE '15.\hskip 1em plus 0.5em minus
+  0.4em\relax New York, NY, USA: Association for Computing Machinery, 2015.
+  [Online]. Available: \url{https://doi.org/10.1145/2723839.2723841}
+\BIBentrySTDinterwordspacing
+
 \end{thebibliography}

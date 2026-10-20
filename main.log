@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.28)  20 SEP 2026 15:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.28)  20 OCT 2026 23:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1385,7 +1385,7 @@ l.99 \include{chapter1}
 
  (chapter2.tex
 chapter 2.
-<images/MDV_BlackBox_Problem.pdf, id=90, 963.6pt x 542.025pt>
+<images/MDV_BlackBox_Problem.pdf, id=88, 963.6pt x 542.025pt>
 File: images/MDV_BlackBox_Problem.pdf Graphic file (type pdf)
 <use images/MDV_BlackBox_Problem.pdf>
 Package pdftex.def Info: images/MDV_BlackBox_Problem.pdf  used on input line 9.
@@ -1403,17 +1403,17 @@ Package babel Info: 'ngerman' activates 'ngerman' shorthands.
 
  (chapter3.tex
 chapter 3.
-) [5
+[5
 
 
 
 
-]
+]) [6]
 \openout2 = `chapter4.aux'.
 
  (chapter4.tex
 chapter 4.
-) [6
+) [7
 
 
 
@@ -1423,12 +1423,17 @@ chapter 4.
 
  (chapter5.tex
 chapter 5.
-) [7
+) [8
 
 
 
 
-] (main.bbl) (intern.bbl [8
+] (main.bbl
+Underfull \hbox (badness 4927) in paragraph at lines 56--60
+[]\T1/lmr/m/n/10.95 (+20) A. Ga-datsch, ``Mo-del-lie-rung und ana-ly-se von pro-zes-sen,'' in \T1/lmr/m/it/10.95 (+20) Grund-kurs
+ []
+
+) (intern.bbl [9
 
 
 
@@ -1436,7 +1441,7 @@ chapter 5.
 
 Package nag Warning: Unmatched ``\flushright'' command on line 26.
 
-[9
+[10
 
 ]
 
@@ -1449,17 +1454,17 @@ L3 programming layer <2020/03/25>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 40481 strings out of 467871
- 783025 string characters out of 5435205
+ 40496 strings out of 467871
+ 783258 string characters out of 5435205
  1523343 words of memory out of 5000000
- 68367 multiletter control sequences out of 15000+600000
- 718459 words of font info for 175 fonts, out of 8000000 for 9000
+ 68369 multiletter control sequences out of 15000+600000
+ 718921 words of font info for 180 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  124i,20n,123p,11369b,698s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/MiKTeX/fonts/type1/public/lm/lmbxo10.pfb><C:/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/MiKTeX/fonts/type1/public/lm/lmro9.pfb><C:/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on main.pdf (14 pages, 437911 bytes).
+Output written on main.pdf (15 pages, 446041 bytes).
 PDF statistics:
- 274 PDF objects out of 1000 (max. 8388607)
- 40 named destinations out of 1000 (max. 500000)
- 51348 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 282 PDF objects out of 1000 (max. 8388607)
+ 43 named destinations out of 1000 (max. 500000)
+ 51340 words of extra memory for PDF output out of 51595 (max. 10000000)
 
