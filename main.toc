@@ -7,13 +7,13 @@
 \contentsline {chapter}{\numberline {1}Einleitung}{1}{chapter.1}%
 \contentsline {chapter}{\numberline {2}Problemstellung}{2}{chapter.2}%
 \contentsline {chapter}{\numberline {3}Methodik}{5}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Prozessaufnahme und -modellierung mit BPMN 2.0}{5}{section.3.1}%
+\contentsline {section}{\numberline {3.1}Prozessaufnahme und -modellierung}{5}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Einordnung in der Prozesslandkarte}{6}{section.3.2}%
-\contentsline {chapter}{\numberline {4}Transfer}{7}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Erstaufnahme des MDV-Ablaufs}{7}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Modellierung des MDV-Prozesses in Signavio}{7}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Verortung des MDV-Modells in der Prozessarchitektur}{7}{section.4.3}%
-\contentsline {chapter}{\numberline {5}Fazit und Ausblick}{8}{chapter.5}%
-\contentsline {chapter}{Literaturverzeichnis}{9}{chapter*.7}%
-\contentsline {chapter}{Quellenverzeichnis}{10}{chapter*.8}%
+\contentsline {chapter}{\numberline {4}Transfer}{8}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Erstaufnahme des MDV-Ablaufs}{8}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Modellierung des MDV-Prozesses in Signavio}{8}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Verortung des MDV-Modells in der Prozessarchitektur}{8}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Fazit und Ausblick}{9}{chapter.5}%
+\contentsline {chapter}{Literaturverzeichnis}{10}{chapter*.9}%
+\contentsline {chapter}{Quellenverzeichnis}{11}{chapter*.10}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

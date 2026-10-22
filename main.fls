@@ -633,6 +633,13 @@ INPUT .\chapter3.tex
 INPUT .\chapter3.tex
 INPUT chapter3.tex
 INPUT C:\MiKTeX\fonts\tfm\public\lm\ec-lmssbx10.tfm
+INPUT .\images\bpmn_grundelemente_lm.png
+INPUT .\images\bpmn_grundelemente_lm.png
+INPUT .\images\bpmn_grundelemente_lm.png
+INPUT .\images\bpmn_grundelemente_lm.png
+INPUT .\images\bpmn_grundelemente_lm.png
+INPUT .\images\bpmn_grundelemente_lm.png
+INPUT .\images\bpmn_grundelemente_lm.png
 INPUT .\chapter4.tex
 INPUT .\chapter4.tex
 OUTPUT chapter4.aux

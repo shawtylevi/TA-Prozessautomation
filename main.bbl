@@ -21,6 +21,10 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
+\bibitem{ottenlips2025geschaftsprozessmanagement}
+J.~Ottenlips, \emph{Gesch{\"a}ftsprozessmanagement: Grundlagen, Methoden und
+  praktische Umsetzung}.\hskip 1em plus 0.5em minus 0.4em\relax Springer, 2025.
+
 \bibitem{Pospiech2014}
 S.~Pospiech, S.~Mielke, R.~Mertens, M.~Pelke, K.~Jagannath, and M.~Stadler,
   ``Exploration and analysis of undocumented processes using heterogeneous and
@@ -66,5 +70,9 @@ S.~Oppl, ``Articulation of subject-oriented business process models,'' in
   0.4em\relax New York, NY, USA: Association for Computing Machinery, 2015.
   [Online]. Available: \url{https://doi.org/10.1145/2723839.2723841}
 \BIBentrySTDinterwordspacing
+
+\bibitem{Poels2018Conceptualizing}
+G.~Poels, F.~García, F.~Ruiz, and M.~Piattini, ``Conceptualizing business
+  process maps,'' \emph{ArXiv}, vol. abs/1812.05395, 2018.
 
 \end{thebibliography}
