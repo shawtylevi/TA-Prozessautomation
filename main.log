@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.28)  1 NOV 2026 21:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.28)  3 NOV 2026 10:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1489,20 +1489,23 @@ Underfull \hbox (badness 2573) in paragraph at lines 60--64
 
 ]) (intern.bbl [13]) [14
 
+] (ki_tools.tex) [15
+
+
 ]
 \openout2 = `anhang.aux'.
 
  (anhang.tex
 chapter A.
-<images/mdv_modell_a4.png, id=290, 844.8363pt x 597.432pt>
+<images/mdv_modell_a4.png, id=298, 844.8363pt x 597.432pt>
 File: images/mdv_modell_a4.png Graphic file (type png)
 <use images/mdv_modell_a4.png>
 Package pdftex.def Info: images/mdv_modell_a4.png  used on input line 5.
 (pdftex.def)             Requested size: 412.56499pt x 291.7506pt.
-) [15
+) [16
 
 
- <./images/mdv_modell_a4.png>] [16]
+ <./images/mdv_modell_a4.png>] [17]
 
 Package nag Warning: Unmatched ``\flushright'' command on line 26.
 
@@ -1520,17 +1523,17 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 40729 strings out of 467871
- 787628 string characters out of 5435205
+ 40754 strings out of 467871
+ 788295 string characters out of 5435205
  1525343 words of memory out of 5000000
- 68519 multiletter control sequences out of 15000+600000
- 743969 words of font info for 224 fonts, out of 8000000 for 9000
+ 68533 multiletter control sequences out of 15000+600000
+ 744330 words of font info for 227 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  124i,20n,123p,11369b,737s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/MiKTeX/fonts/type1/public/lm/lmbxo10.pfb><C:/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/MiKTeX/fonts/type1/public/lm/lmro9.pfb><C:/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on main.pdf (21 pages, 937071 bytes).
+Output written on main.pdf (22 pages, 942131 bytes).
 PDF statistics:
- 404 PDF objects out of 1000 (max. 8388607)
- 72 named destinations out of 1000 (max. 500000)
+ 414 PDF objects out of 1000 (max. 8388607)
+ 74 named destinations out of 1000 (max. 500000)
  63646 words of extra memory for PDF output out of 74296 (max. 10000000)
 
