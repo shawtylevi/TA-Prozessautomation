@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.28)  23 OCT 2026 00:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.28)  1 NOV 2026 21:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1134,7 +1134,28 @@ File: bkm-pdftex.def 2023-12-10 v1.31 bookmark driver for pdfTeX and luaTeX (HO)
 )) (main.aux
 Package babel Info: 'ngerman' activates 'ngerman' shorthands.
 (babel)             Reported on input line 13.
- (chapter1.aux) (chapter2.aux) (chapter3.aux) (chapter4.aux) (chapter5.aux))
+ (chapter1.aux) (chapter2.aux
+
+LaTeX Warning: Label `acro:WLTP@cref' multiply defined.
+
+) (chapter3.aux
+
+LaTeX Warning: Label `acro:BPMN@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:BPMN@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:BPMN@cref' multiply defined.
+
+) (chapter4.aux
+
+LaTeX Warning: Label `acro:AZST@cref' multiply defined.
+
+
+LaTeX Warning: Label `acro:WLTP@cref' multiply defined.
+
+) (chapter5.aux) (anhang.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
@@ -1371,6 +1392,8 @@ Package tocbasic Info: character protrusion at lof deactivated on input line 92.
 chapter 1.
 Package acronym Info: Label `acro:MDV' newly defined as it shall be overridden
 although it is yet undefined on input line 2.
+Package acronym Info: Label `acro:BPMN' newly defined as it shall be overridden
+although it is yet undefined on input line 2.
 )
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
@@ -1385,17 +1408,20 @@ l.99 \include{chapter1}
 
  (chapter2.tex
 chapter 2.
-<images/MDV_BlackBox_Problem.pdf, id=96, 963.6pt x 542.025pt>
+<images/MDV_BlackBox_Problem.pdf, id=115, 963.6pt x 542.025pt>
 File: images/MDV_BlackBox_Problem.pdf Graphic file (type pdf)
 <use images/MDV_BlackBox_Problem.pdf>
 Package pdftex.def Info: images/MDV_BlackBox_Problem.pdf  used on input line 9.
 (pdftex.def)             Requested size: 412.56499pt x 232.06546pt.
-) [2
+Package acronym Info: Label `acro:WLTP' newly defined as it shall be overridden
+although it is yet undefined on input line 18.
+Package acronym Info: Label `acro:WLTP' overridden on input line 18.
+[2
 
 
 
 
-] [3 <./images/MDV_BlackBox_Problem.pdf>]
+] [3 <./images/MDV_BlackBox_Problem.pdf>])
 Package babel Info: 'ngerman' activates 'ngerman' shorthands.
 (babel)             Reported on input line 100.
  [4]
@@ -1403,77 +1429,108 @@ Package babel Info: 'ngerman' activates 'ngerman' shorthands.
 
  (chapter3.tex
 chapter 3.
+Package acronym Info: Label `acro:BPMN' overridden on input line 11.
+<images/bpmn_grundelemente_lm.png, id=190, 487.8225pt x 321.6015pt>
+File: images/bpmn_grundelemente_lm.png Graphic file (type png)
+<use images/bpmn_grundelemente_lm.png>
+Package pdftex.def Info: images/bpmn_grundelemente_lm.png  used on input line 14.
+(pdftex.def)             Requested size: 371.30597pt x 244.78772pt.
 [5
 
 
 
 
-]
-Package acronym Info: Label `acro:BPMN' newly defined as it shall be overridden
-although it is yet undefined on input line 18.
- [6]
-<images/bpmn_grundelemente_lm.png, id=185, 487.8225pt x 321.6015pt>
-File: images/bpmn_grundelemente_lm.png Graphic file (type png)
-<use images/bpmn_grundelemente_lm.png>
-Package pdftex.def Info: images/bpmn_grundelemente_lm.png  used on input line 22.
-(pdftex.def)             Requested size: 288.79422pt x 190.39099pt.
-) [7 <./images/bpmn_grundelemente_lm.png>]
+] [6 <./images/bpmn_grundelemente_lm.png>]
+Package acronym Info: Label `acro:BPMN' overridden on input line 26.
+Package acronym Info: Label `acro:BPMN' overridden on input line 26.
+) [7]
 \openout2 = `chapter4.aux'.
 
  (chapter4.tex
 chapter 4.
-) [8
+
+Overfull \hbox (0.76428pt too wide) in paragraph at lines 7--10
+\T1/lmr/m/n/10.95 (-20) Gemäÿ Ab-schnitt []3.1[] wur-den die Pro-zess-schrit-te, die Ver-ant-wort-li-chen so-wie die Eingangs-
+ []
+
+Package acronym Info: Label `acro:AZST' newly defined as it shall be overridden
+although it is yet undefined on input line 15.
+Package acronym Info: Label `acro:CoP' newly defined as it shall be overridden
+although it is yet undefined on input line 17.
+Package acronym Info: Label `acro:AZST' overridden on input line 19.
+[8
 
 
 
 
 ]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [9]
+Package acronym Info: Label `acro:WLTP' overridden on input line 28.
+) [10]
 \openout2 = `chapter5.aux'.
 
  (chapter5.tex
 chapter 5.
-) [9
+) [11
 
 
 
 
 ] (main.bbl
-Underfull \hbox (badness 4927) in paragraph at lines 60--64
-[]\T1/lmr/m/n/10.95 (+20) A. Ga-datsch, ``Mo-del-lie-rung und ana-ly-se von pro-zes-sen,'' in \T1/lmr/m/it/10.95 (+20) Grund-kurs
+Underfull \hbox (badness 2573) in paragraph at lines 60--64
+[]\T1/lmr/m/n/10.95 (+20) A. Ga-datsch, ``Mo-del-lie-rung und Ana-ly-se von Pro-zes-sen,'' in \T1/lmr/m/it/10.95 (+20) Grund-kurs
  []
 
-) (intern.bbl [10
+[12
 
 
 
-])
+]) (intern.bbl [13]) [14
+
+]
+\openout2 = `anhang.aux'.
+
+ (anhang.tex
+chapter A.
+<images/mdv_modell_a4.png, id=290, 844.8363pt x 597.432pt>
+File: images/mdv_modell_a4.png Graphic file (type png)
+<use images/mdv_modell_a4.png>
+Package pdftex.def Info: images/mdv_modell_a4.png  used on input line 5.
+(pdftex.def)             Requested size: 412.56499pt x 291.7506pt.
+) [15
+
+
+ <./images/mdv_modell_a4.png>] [16]
 
 Package nag Warning: Unmatched ``\flushright'' command on line 26.
 
-[11
-
-]
 
 Package nag Warning: 1 complaints in total.
 
-(main.aux (chapter1.aux) (chapter2.aux) (chapter3.aux) (chapter4.aux) (chapter5.aux))
+(main.aux (chapter1.aux) (chapter2.aux) (chapter3.aux) (chapter4.aux) (chapter5.aux) (anhang.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
  ***********
+
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 40530 strings out of 467871
- 783948 string characters out of 5435205
- 1524341 words of memory out of 5000000
- 68389 multiletter control sequences out of 15000+600000
- 719300 words of font info for 184 fonts, out of 8000000 for 9000
+ 40729 strings out of 467871
+ 787628 string characters out of 5435205
+ 1525343 words of memory out of 5000000
+ 68519 multiletter control sequences out of 15000+600000
+ 743969 words of font info for 224 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 124i,20n,123p,11369b,698s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 124i,20n,123p,11369b,737s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/MiKTeX/fonts/type1/public/lm/lmbxo10.pfb><C:/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/MiKTeX/fonts/type1/public/lm/lmro9.pfb><C:/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on main.pdf (16 pages, 558292 bytes).
+Output written on main.pdf (21 pages, 937071 bytes).
 PDF statistics:
- 314 PDF objects out of 1000 (max. 8388607)
- 49 named destinations out of 1000 (max. 500000)
- 51345 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 404 PDF objects out of 1000 (max. 8388607)
+ 72 named destinations out of 1000 (max. 500000)
+ 63646 words of extra memory for PDF output out of 74296 (max. 10000000)
 

@@ -14,58 +14,59 @@ A level-1 auxiliary file: chapter5.aux
 Reallocating 'name_of_file' (item size: 1) to 9 items.
 The style file: IEEEtran.bst
 Reallocating 'name_of_file' (item size: 1) to 11 items.
+Reallocating 'name_of_file' (item size: 1) to 11 items.
+A level-1 auxiliary file: anhang.aux
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'wiz_functions' (item size: 4) to 6000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Database file #1: references.bib
-Warning--I didn't find a database entry for "amg2025mdvvorgehensweise"
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 Warning--empty booktitle in Hylko2005THANKSFT
 
 Done.
-You've used 9 entries,
+You've used 10 entries,
             4087 wiz_defined-function locations,
-            888 strings with 9279 characters,
-and the built_in function-call counts, 5561 in all, are:
-= -- 427
-> -- 111
-< -- 31
-+ -- 60
-- -- 21
-* -- 265
-:= -- 894
-add.period$ -- 20
-call.type$ -- 9
+            892 strings with 9496 characters,
+and the built_in function-call counts, 6173 in all, are:
+= -- 468
+> -- 128
+< -- 35
++ -- 69
+- -- 24
+* -- 289
+:= -- 981
+add.period$ -- 22
+call.type$ -- 10
 change.case$ -- 7
-chr.to.int$ -- 69
-cite$ -- 10
-duplicate$ -- 413
-empty$ -- 517
-format.name$ -- 25
-if$ -- 1281
+chr.to.int$ -- 81
+cite$ -- 11
+duplicate$ -- 454
+empty$ -- 580
+format.name$ -- 29
+if$ -- 1431
 int.to.chr$ -- 0
-int.to.str$ -- 9
-missing$ -- 73
-newline$ -- 56
-num.names$ -- 9
-pop$ -- 186
+int.to.str$ -- 10
+missing$ -- 80
+newline$ -- 59
+num.names$ -- 10
+pop$ -- 210
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 440
+skip$ -- 486
 stack$ -- 0
-substring$ -- 172
-swap$ -- 290
+substring$ -- 199
+swap$ -- 320
 text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 9
+type$ -- 10
 warning$ -- 1
-while$ -- 21
-width$ -- 10
-write$ -- 109
-(There were 2 warnings)
+while$ -- 25
+width$ -- 12
+write$ -- 116
+(There was 1 warning)

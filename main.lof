@@ -4,9 +4,12 @@
 \babel@toc {ngerman}{}\relax 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Visualisierung des Big Picture, eigene Darstellung}}{3}{figure.caption.6}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Visualisierung des Big Picture, eigene Darstellung}}{3}{figure.caption.7}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Grundelemente BPMN 2.0, eigene Darstellung basierend auf \cite {ottenlips2025geschaftsprozessmanagement}}}{7}{figure.caption.8}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Grundelemente BPMN 2.0, eigene Darstellung basierend auf \cite {ottenlips2025geschaftsprozessmanagement}}}{6}{figure.caption.11}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\def \@chapapp {\appendixname }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {A.1}{\ignorespaces MDV-Prozess für Westeuropa, vereinfachte Darstellung des Ablaufs ohne Rollen, Datenobjekte, Systeme und Tätigkeitsbeschreibungen, eigene Darstellung}}{15}{figure.caption.20}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
