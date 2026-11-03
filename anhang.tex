@@ -1,0 +1,62 @@
+\chapter{Anhang}
+
+\begin{figure}[htpb]
+    \centering
+    \includegraphics[width=1.0\linewidth]{images/mdv_modell_a4.png}
+    \caption{MDV-Prozess für Westeuropa, vereinfachte Darstellung des Ablaufs ohne Rollen, Datenobjekte, Systeme und Tätigkeitsbeschreibungen, eigene Darstellung}
+    \label{fig:MDV-Prozess}
+\end{figure}
+
+
+\begin{table}[htbp]
+\centering
+\small
+\caption{Rollen im MDV-Modell mit Beteiligungsart und Aktivitäten, eigene Darstellung}
+\label{tab:rollen}
+\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}X l l}
+\hline
+\textbf{Rolle} & \textbf{Beteiligung} & \textbf{Aktivität (Nr.)} \\
+\hline
+Projektleiter Entwicklung (PLE) & konsultiert & 1, 7, 10 \\
+Projektleiter Entwicklung (PLE) eDrive (bei BEV-Projekten) & konsultiert & 1, 7, 10 \\
+Projektleiter Antrieb cDrive (bei Verbrennerprojekten) & konsultiert & 1, 7, 10 \\
+Entwicklungsingenieur Reichweite und Verbrauch & konsultiert & 1, 5, 7, 10 \\
+Simulationsingenieur & konsultiert & 1, 5, 7, 10 \\
+Produktmanagement (PM) & konsultiert & 1, 7, 10 \\
+Projektleiter Zertifizierung & konsultiert & 1, 7, 10 \\
+Zertifizierung Markthomologe & konsultiert & 1, 7, 10 \\
+Vertrieb & konsultiert & 1, 7, 10 \\
+Abnahmezentrum Zertifizierung & konsultiert & 1 \\ % prüfen: weitere Aktivitäten?
+RD\_Vortest \& Produktbewährung & konsultiert & 1 \\ % prüfen: weitere Aktivitäten?
+Fachexperte Zertifizierung (FEZ) & konsultiert & 5 \\
+AK Zertifizierung & informiert & 8, 11 \\
+Projektleitersitzung (PLS) & informiert & 8, 11 \\
+MO/QZE & konsultiert & 13 \\
+\hline
+\end{tabularx}
+\end{table}
+
+% \subsection{Straßenstrukturdetektion von RANSAC}
+% %ACHTUNG xy keine GENAUIGKEIT, der Datensatz ist nicht ausgewogen 
+% In diesem Abschnitt wird RANSAC auf einem Datensatz getestet, der ausschließlich gerade Strecken sowie Kurven enthält. Diese Ergebnisse werden mit dem gemischten Datensatz verglichen. Gerade Strecken sowie Kurven werden nochmal separat ausgewertet, da die Kurvendetektion von der Geradendetektion bedingt wird, wie in \ref{sec:Flowchart Algo} ersichtlich. Dafür wurde eine CSV-Datei als Testdatensatz verwendet, die 1000 zufällig ausgewählte Frames mit geraden Strecken und 1000 zufällig ausgewählte Frames mit Kurven enthält. Der Algorithmus wurde auf beiden Testdatensätzen verwendet. Da dieser jedoch nicht ausgewogen ist, können nur die Genauigkeit sowie die Laufzeit von RANSAC ausgewertet werden.
+% \newline 
+% Die Abbildung \ref{image:Auswertung5} zeigt zwei Diagramme, welche die Genauigkeit und die Laufzeit in Abhängigkeit von der Anzahl der Akkumulationsschritte darstellen. Im linken Diagramm wird die Genauigkeit dargestellt. Die Detektionsgenauigkeit für gerade Strecken steigt schnell an und übersteigt bereits nach etwa acht Akkumulationsschritten einen Wert von 0.8. Anschließend bleibt sie stabil. Dahingegen ist die Detektionsgenauigkeit bei Kurven in den ersten Akkumulationsschritten sehr niedrig. Bei 10 Akkumulationsschritten erreicht sie ihren Tiefpunkt mit einer Genauigkeit von 0.1. Danach steigt sie kontinuierlich an und erreicht ein Maximum von 0.75. Bei den gemischten Szenarien beginnt die Genauigkeit bei 0.46 und zeigt eine Steigung mit zunehmenden Akkumulationsschritten, wobei sie eine schlechtere Genauigkeit als die grüne Kurve aufweist.
+% \newline
+% Im rechten Diagramm wird die Laufzeit dargestellt. Bei der Detektion von geraden Strecken nimmt die Laufzeit mit zunehmender Anzahl an Akkumulationsschritten stetig zu und erreicht bei 22 Schritten ein Maximum von 0.59 s. Bei der Kurvendetektion beginnt die Laufzeit bei etwa 0.1 und steigt ebenfalls kontinuierlich an. Jedoch erreicht sie bei höheren Akkumulationsschritten eine niedrigere Laufzeit als bei geraden Strecken. Bei gemischten Szenarien beginnt die Laufzeit bei etwa 0.1 und steigt gleichmäßig an, bleibt jedoch unter den Werten der anderen beiden Szenarien.
+% \newline
+% Die Diagramme zeigen, dass die Anzahl der Akkumulationsschritte einen erheblichen Einfluss auf die Genauigkeit und die Laufzeit hat, wobei verschiedene Streckentypen unterschiedlich betroffen sind. Die Genauigkeit auf geraden Strecken ist am höchsten und stabilisiert sich schnell. Kurvendetektionen zeigen eine deutlich geringere Anfangsgenauigkeit, die jedoch mit mehr Akkumulationsschritten verbessert werden kann. Gemischte Szenarien liegen in der Genauigkeit zwischen den beiden anderen Szenarien und zeigen eine moderate Verbesserung mit zunehmenden Akkumulationsschritten. Die Laufzeit steigt in allen Szenarien mit der Anzahl der Akkumulationsschritte, wobei die gemischte Szenarien die niedrigste Laufzeit aufweist.
+% \begin{figure}[H]
+%     \centering
+%     \captionsetup{justification=centering}
+%     \includegraphics[scale=0.8]{/Users/lenguye/Documents/Bachelorarbeit/Nguyen_BA/LeVisThesis/images/Laufzeit_neuneuneu.pdf}
+%     \caption{Vergleich von Genauigkeit und Laufzeit auf Datensätzen mit geraden Strecken, Kurven und gemischten Szenarien.}
+%     \label{image:Auswertung5}
+% \end{figure}
+
+
+
+
+
+% fehler die ich habe sind systematisch und nicht auf mein Modell auswirkend, ich habe keine Infos um die Fehler asuzurechnen 
+% keine Fehlerbetrachtung, da mir in dem Punkt keine Infos vorliegen (keine Ahnung Fahrzeug, keine Ahnung was für Sensor, also kann man den Fehler nicht ausrechnen)
+

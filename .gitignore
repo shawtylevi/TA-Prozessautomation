@@ -1,0 +1,14 @@
+
+# LaTeX-Hilfsdateien
+*.aux
+*.log
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.blg
+*.lof
+*.lot
+*.out
+*.bcf
+*.run.xml
